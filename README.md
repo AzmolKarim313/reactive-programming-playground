@@ -36,6 +36,8 @@ git clone https://github.com/AzmolKarim313/reactive-programming-playground.git
 cd reactive-programming-playground
 ```
 
+---
+
 ## 🧩 Learning Sections
 ### Section 01: Core Reactive Components
 - Create a custom Publisher, Subscriber, and Subscription
@@ -87,3 +89,5 @@ In this section, we dive into the major operations of the Flux publisher.
     - You should sell the stock
     - Cancel your subscription
     - Print your profit
+
+---
