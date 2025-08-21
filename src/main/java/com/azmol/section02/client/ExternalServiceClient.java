@@ -3,6 +3,7 @@ package com.azmol.section02.client;
 import com.azmol.common.AbstractHttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public class ExternalServiceClient extends AbstractHttpClient {
@@ -14,6 +15,14 @@ public class ExternalServiceClient extends AbstractHttpClient {
                 .responseContent()
                 .asString()
                 .next();
+    }
+
+    public Flux<Integer> getPriceChanges(){
+        return this.httpClient.get()
+                .uri("/demo02/stock/stream")
+                .responseContent()
+                .asString()
+                .map(Integer::parseInt);
     }
 
 }

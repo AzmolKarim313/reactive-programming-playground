@@ -54,7 +54,7 @@ In this section, we dive into the major operations of the Mono publisher.
 - Lecture 10: `Mono.defer()`
 - Lecture 11: Non-blocking I/O
 
-### 🎯 Assignment
+#### 🎯 Assignment - Mono Example
 
 Create a FileService using Mono that can:
 - Read a file
@@ -62,3 +62,28 @@ Create a FileService using Mono that can:
 - Delete a file
 
 All operations must be implemented reactively using Mono.
+
+### Section 03: Exploring Flux
+In this section, we dive into the major operations of the Flux publisher.
+- Lecture 01: `Flux.just()`
+- Lecture 02: Multiple Subscribers
+- Lecture 03: `Flux.fromIterable()` & `Flux.fromArray()`
+- Lecture 04: `Flux.fromStream()`
+- Lecture 05: `Flux.Range()`
+- Lecture 06: Log Information using pipelines
+- Lecture 07: Flux vs List execution and monitor performance
+- Lecture 09: `Flux.interval()`
+- Lecture 10: `Flux.empty()` & `Flux.error()`
+- Lecture 11: `Flux.from()` [for Mono to Flux] & `Flux.next(), Mono.from()` [for Flux to Mono]
+
+#### 🎯 Assignment - Flux Example
+
+- The stock service will emit price changes every 500ms for ~20 seconds.
+- The price might change between 80 - 120.
+- Task:
+  - Create subscriber with $1000 balance
+  - Whenever price will drops below $90, you should buy the stock
+  - When price will be above $110
+    - You should sell the stock
+    - Cancel your subscription
+    - Print your profit
