@@ -56,7 +56,7 @@ In this section, we dive into the major operations of the Mono publisher.
 - Lecture 10: `Mono.defer()`
 - Lecture 11: Non-blocking I/O
 
-#### 🎯 Assignment - Mono Example
+## 🎯 Assignment - Mono Example
 
 Create a FileService using Mono that can:
 - Read a file
@@ -78,7 +78,7 @@ In this section, we dive into the major operations of the Flux publisher.
 - Lecture 10: `Flux.empty()` & `Flux.error()`
 - Lecture 11: `Flux.from()` [for Mono to Flux] & `Flux.next(), Mono.from()` [for Flux to Mono]
 
-#### 🎯 Assignment - Flux Example
+## 🎯 Assignment - Flux Example
 
 - The stock service will emit price changes every 500ms for ~20 seconds.
 - The price might change between 80 - 120.
@@ -89,5 +89,24 @@ In this section, we dive into the major operations of the Flux publisher.
     - You should sell the stock
     - Cancel your subscription
     - Print your profit
+
+### Section 04: Flux - Emitting Items Programmatically
+- Lecture 01: `Flux.create()`
+- Lecture 02: Flux create refactor
+- Lecture 03: Flux Thread Safe - here have both exercise **threadUnsafe [Traditional Programming]** and **threadSafe [using Flux]**.
+- Lecture 04: `Flux.create()` downstream pipeline.
+- Lecture 05: Learn `take()`, `takeWhile()`, `takeUntil()` operators
+- Lecture 06: `Flux.generate()`
+- Lecture 07: `Flux.generate()` but using state
+
+## 🎯 Assignment - Flux Programmatically Example
+
+You have a fileReader interface, there have one method readFile(Path path)
+- do the work when it is subscribe
+- do the work based on the demand
+- stop producing when subscription cancelled
+- produced only requested item
+- file should be closed when it is finished
+
 
 ---
