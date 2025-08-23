@@ -102,11 +102,16 @@ In this section, we dive into the major operations of the Flux publisher.
 ## 🎯 Assignment - Flux Programmatically Example
 
 You have a fileReader interface, there have one method readFile(Path path)
-- do the work when it is subscribe
+- do the work when it is subscriber
 - do the work based on the demand
 - stop producing when subscription cancelled
 - produced only requested item
 - file should be closed when it is finished
 
+### Section 05: Operation
+- Lecture 01: `.handle()` - Handle behaves like filter + map.
+- Lecture 02: Assignment of `.handle()`.
+- Lecture 03: `.do*()` there have many callback function in this example.
+- Lecture 04: `.delay()`
 
 ---
